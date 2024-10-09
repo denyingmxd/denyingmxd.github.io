@@ -27,8 +27,9 @@ header {
 
 /*high resolution png in publation*/
 .publication img {
-  max-width: 480px;
-  height: auto;
+    width: 480px;
+    height: 360px; /* Set a fixed height */
+    object-fit: cover;
+    object-position: center;
 }
-
 /* Add more styles as needed */
