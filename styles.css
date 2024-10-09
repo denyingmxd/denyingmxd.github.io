@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-content {
+    flex: 1;
+}
+
+.profile-photo {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.publication {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.publication img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+/* Add more styles as needed */
