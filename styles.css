@@ -29,7 +29,5 @@ header {
 .publication img {
     width: 480px;
     height: 360px; /* Set a fixed height */
-    object-fit: cover;
-    object-position: center;
 }
 /* Add more styles as needed */
