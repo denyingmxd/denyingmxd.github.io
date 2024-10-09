@@ -59,13 +59,16 @@ h2 {
     margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #eee;
+    align-items: flex-start;
 }
 
 .publication img {
-    width: 200px;
+    width: 300px;
     height: auto;
     margin-right: 20px;
     border-radius: 4px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .publication h3 {
@@ -134,6 +137,7 @@ th {
 
     .publication img {
         width: 100%;
+        max-width: 300px;
         margin-right: 0;
         margin-bottom: 10px;
     }
