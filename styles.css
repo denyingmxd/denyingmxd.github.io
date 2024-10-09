@@ -27,7 +27,7 @@ header {
 
 /*high resolution png in publation*/
 .publication img {
-  max-width: 100%;
+  max-width: 480px;
   height: auto;
 }
 
