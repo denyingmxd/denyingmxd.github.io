@@ -68,12 +68,13 @@ h2 {
 
 .publication img {
     width: 400px;
-    height: auto;
+    height: 250px;
     margin-right: 30px;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
+    background-color: #f8f8f8;
 }
 
 .publication img:hover {
@@ -152,6 +153,7 @@ th {
 
     .publication img {
         width: 100%;
+        height: auto;
         max-width: 400px;
         margin-right: 0;
         margin-bottom: 20px;
