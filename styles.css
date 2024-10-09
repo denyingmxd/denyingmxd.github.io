@@ -1,33 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.header-content {
-    flex: 1;
+h1 {
+  color: #800080;
+  margin: 0;
 }
 
-.profile-photo {
-    width: 200px;
-    border-radius: 5px;
+nav a {
+  color: #800080;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+#about {
+  margin-bottom: 40px;
 }
 
 .publication {
-    display: flex;
-    margin-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
 }
 
-/*high resolution png in publation*/
-.publication img {
-    width: 480px;
-    height: 360px; /* Set a fixed height */
+.publication h3 {
+  color: #800080;
+  margin-bottom: 10px;
 }
-/* Add more styles as needed */
+
+.authors, .conference {
+  margin: 5px 0;
+}
+
+.links a {
+  color: #800080;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.publication-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}
