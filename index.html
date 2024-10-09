@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .profile-photo {
+            width: 200px;
+            border-radius: 5px;
+        }
+        .publication {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .publication img {
+            width: 150px;
+            margin-right: 20px;
+        }
+        h1 {
+            color: purple;
+        }
+        a {
+            color: purple;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
+        <div>
             <h1>Your Name</h1>
             <nav>
                 <a href="#">Resume</a> /
@@ -19,21 +51,27 @@
             </nav>
             <p>Your introduction paragraph here...</p>
         </div>
-        <img src="images/your-photo.jpg" alt="Your Name" class="profile-photo">
+        <img src="your-photo.jpg" alt="Your Name" class="profile-photo">
     </header>
 
     <main>
         <h2>Publications</h2>
         <div class="publication">
-            <img src="images/publication1.jpg" alt="Publication 1">
-            <div class="pub-details">
+            <img src="publication1.jpg" alt="Publication 1">
+            <div>
                 <h3>Publication Title</h3>
                 <p>Authors...</p>
                 <p>Conference details...</p>
-                <p><a href="#">Project Page</a>, <a href="#">Paper</a>, <a href="#">Code</a>, <a href="#">Video</a>, <a href="#">Bibtex</a></p>
+                <p>
+                    <a href="#">Project Page</a>,
+                    <a href="#">Paper</a>,
+                    <a href="#">Code</a>,
+                    <a href="#">Video</a>,
+                    <a href="#">Bibtex</a>
+                </p>
             </div>
         </div>
-        <!-- Repeat for other publications -->
+        <!-- Add more publication entries as needed -->
     </main>
 </body>
 </html>
