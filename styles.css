@@ -39,7 +39,7 @@ nav a:hover {
 .profile-photo {
     width: auto;  /* Changed from fixed width */
     height: 200px;  /* Keep the height fixed */
-    max-width: 200px;  /* Ensure it doesn't get too wide */
+    max-width: 400px;  /* Ensure it doesn't get too wide */
     object-fit: contain;  /* Changed from cover to contain */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
