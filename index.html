@@ -26,7 +26,10 @@
 
             </p>
         </div>
-        <img src="man.png" alt="Laiyan" class="profile-photo">
+
+        <div class="profile-photo-container">
+            <img src="man.png" alt="Laiyan" class="profile-photo" id="profile-photo">
+        </div>
     </header>
 
 
@@ -164,6 +167,36 @@
 
     </table>
     </section>
+
+
+<script>
+    const profilePhoto = document.getElementById('profile-photo');
+    const originalSrc = profilePhoto.src;
+    const newSrc = 'woman.png'; // Replace with the path to your new image
+    let hoverTimer;
+
+    profilePhoto.addEventListener('mouseenter', () => {
+        hoverTimer = setTimeout(() => {
+            profilePhoto.style.opacity = '0';
+            setTimeout(() => {
+                profilePhoto.src = newSrc;
+                profilePhoto.style.opacity = '1';
+            }, 300);
+        }, 5000); // 5000 milliseconds = 5 seconds
+    });
+
+    profilePhoto.addEventListener('mouseleave', () => {
+        clearTimeout(hoverTimer);
+        if (profilePhoto.src !== originalSrc) {
+            profilePhoto.style.opacity = '0';
+            setTimeout(() => {
+                profilePhoto.src = originalSrc;
+                profilePhoto.style.opacity = '1';
+            }, 300);
+        }
+    });
+</script>
+
 
 </body>
 </html>
