@@ -66,12 +66,14 @@ h2 {
 }
 
 .publication img {
-    width: 400px;
-    height: 250px;
+    width: 100%; /* Take the full width of the container */
+    max-width: 400px; /* Limit the width to 400px */
+    height: auto; /* Maintain aspect ratio */
     margin-right: 30px;
     border-radius: 8px;
-    object-fit: contain;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    object-fit: contain; /* Ensure the entire image is visible */
+    object-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
     background-color: #f8f8f8;
 }
@@ -153,7 +155,6 @@ th {
     .publication img {
         width: 100%;
         height: auto;
-        max-width: 400px;
         margin-right: 0;
         margin-bottom: 20px;
     }
